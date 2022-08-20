@@ -1,5 +1,5 @@
 <template>
-  <footer>ABC</footer>
+  <footer>&#xec24;</footer>
 </template>
 
 <style lang="less">
