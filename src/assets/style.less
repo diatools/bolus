@@ -1,0 +1,39 @@
+:root {
+  --bgcolor: darkcyan;
+  --bgtext: white;
+
+  --vpadding: 5px;
+  --hpadding: 18px;
+
+  --top: calc(max(env(safe-area-inset-top), var(--vpadding)));
+  --left: calc(max(env(safe-area-inset-left), var(--hpadding)));
+  --right: calc(max(env(safe-area-inset-right), var(--hpadding)));
+  --bottom: calc(max(env(safe-area-inset-bottom), var(--vpadding)));
+}
+
+@media (min-width: 600px) {
+  :root {
+    --hpadding: 6px;
+  }
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+  user-select: none;
+  text-size-adjust: none;
+  touch-action: none;
+  background: var(--bgcolor);
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
