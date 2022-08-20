@@ -1,4 +1,4 @@
-name: Deploy with yarn to GitHub Pages
+name: Deploy with NPM to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
